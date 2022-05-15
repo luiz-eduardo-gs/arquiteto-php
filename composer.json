@@ -1,0 +1,8 @@
+{
+  "name": "luiz-eduardo-gs/arquiteto-php",
+  "autoload": {
+    "psr-4": {
+      "Arquiteto\\PHP\\": "src/"
+    }
+  }
+}
