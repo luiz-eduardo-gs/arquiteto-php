@@ -1,6 +1,7 @@
 <?php
 
 use LuizEduardo\DesignPattern\CalculadoraDeImpostos;
+use LuizEduardo\DesignPattern\Impostos\ICMS;
 use LuizEduardo\DesignPattern\Orcamento;
 
 require 'vendor/autoload.php';
@@ -11,6 +12,6 @@ $orcamento = new Orcamento();
 
 $orcamento->valor = 100;
 
-$calculoImposto = $calculadora->calcula($orcamento, 'ISS');
+$calculoImposto = $calculadora->calcula($orcamento,  new ICMS());
 
 echo $calculoImposto;
